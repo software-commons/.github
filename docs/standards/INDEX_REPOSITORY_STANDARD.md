@@ -69,7 +69,7 @@ Protected default-branch changes MUST require pull requests and the pinned SCES 
 
 Each production release MUST:
 
-1. Freeze the source commit, discovery cutoff, model revision, scope, and exact selected claim revisions. Preserve the source-to-claim-to-entity mapping and the release's relationship to its predecessor.
+1. Freeze the source commit, discovery cutoff, model revision, scope, and exact selected claim revisions. Every domain record used in the release MUST match its bytes at the frozen source commit. Preserve the source-to-claim-to-entity mapping and the release's relationship to its predecessor.
 2. Write the selection to `sces/publication.json` and use the pinned validator to build and verify the required release artifacts via the adopted release procedure. The release manifest records the policy version and digest, input and artifact identities, verified coverage, exclusions, limits, and outcomes from all applicable qualification gates.
 3. Document, check, and obtain authorization for the claim-to-output mapping for every additional consumer artifact. Gate all material factual output, including attributes encoded as relationships and labels that assert factual identity. Canonical publication MUST use the exact validated bytes after approval. A repository MUST prevent alternate publication paths from conferring canonical status on unchecked output.
 4. Supply independent consumers a versioned payload, schema and index identity, qualification report, checksums, and instructions for reproducing the artifacts from the frozen inputs. Independent reproducibility MUST work without a live index service or automatically fetching mutable sources.
@@ -88,7 +88,7 @@ Each index's regression suite MUST check the applicable behaviors below:
 - A new cutoff does not rewrite unrelated entity records. Validation and build leave canonical inputs byte-identical.
 - Builds from identical inputs produce identical artifact bytes. Unsupported records, bad bindings, and invalidated claims cannot reach a canonical export.
 
-The initial shared architecture qualification MUST exercise synthetic language, runtime, platform, and specification cases. Test permanent identities, distinct domain kinds, exact SCES source and claim revisions, versioned assertions, cross-index references, incremental writes, qualification, and reproducible exports. Fixtures MUST remain separate from production research and publication.
+The initial shared architecture qualification MUST exercise synthetic language, runtime, platform, and specification cases. Test permanent identities, distinct domain kinds, exact SCES source and claim revisions, versioned assertions, cross-index references, incremental writes, qualification, and reproducible exports. Fixtures MUST remain separate from production research and publication. See the [initial qualification record](SCIRS_1_0_QUALIFICATION.md).
 
 ## Pinning and change control
 
