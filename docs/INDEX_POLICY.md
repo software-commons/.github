@@ -21,6 +21,8 @@ Each index must document the licensing of its published material, any upstream t
 
 Each index must [adopt SCES](standards/SCES_ADOPTION.md) before substantive research and apply the pinned qualification gates before publishing a canonical knowledge release.
 
+Apply the [Software Commons Index Repository Standard](standards/INDEX_REPOSITORY_STANDARD.md) for shared identity, registry, research, and publication architecture.
+
 ## Cross-index interoperability
 
 A reference must identify the owning index and record unambiguously. Include the target release or another documented immutable revision when the reference is used in a published artifact. Document how a consumer can resolve the reference and interpret the referenced representation at that revision. Distinguish index release versions from the revisions of underlying sources, and identify source revisions through editions, versioned locators, immutable identifiers, or comparable evidence.
