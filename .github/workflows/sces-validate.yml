@@ -1,0 +1,55 @@
+name: SCES evidence validation
+
+on:
+  workflow_call:
+    inputs:
+      policy-ref:
+        description: Full commit SHA of the same policy revision used to call this workflow.
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  evidence:
+    name: SCES validation
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Check policy pin format
+        env:
+          POLICY_REF: ${{ inputs.policy-ref }}
+        run: |
+          set -eu
+          [[ "$POLICY_REF" =~ ^[0-9a-f]{40}$ ]]
+      - name: Check out evidence repository
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          path: index
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Check out the pinned SCES policy
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          repository: software-commons/.github
+          ref: ${{ inputs.policy-ref }}
+          path: policy
+          persist-credentials: false
+      - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+        with:
+          python-version: '3.12'
+      - name: Verify evidence and the active publication
+        env:
+          POLICY_REF: ${{ inputs.policy-ref }}
+          REPOSITORY: ${{ github.repository }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.merge_group.base_sha || github.event.before }}
+        run: |
+          set -eu
+          test "$(git -C policy rev-parse HEAD)" = "$POLICY_REF"
+          python -m pip install --disable-pip-version-check -r policy/tools/sces/requirements.txt
+          args=(--repo index --repository "$REPOSITORY")
+          if [[ -n "$BASE_SHA" && "$BASE_SHA" != 0000000000000000000000000000000000000000 ]]; then
+            args+=(--base "$BASE_SHA")
+          fi
+          python policy/tools/sces/validate.py "${args[@]}"

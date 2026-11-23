@@ -20,3 +20,7 @@ Research notes, proposals, and review comments retain their provisional status. 
 Discuss a cross-index change in the repository that owns the record or policy and link the discussion from each affected repository. Confirm affected identifiers, versions, and publication dependencies with the affected repositories before treating the proposal as adopted across them. Each repository records its own adoption and releases on its own schedule.
 
 Preserve compatibility where practical. Document breaking changes explicitly, including affected identifiers or data contracts, the versions involved, and any migration path. Preserve access to historical releases and the sources used to produce them. See the [interoperability policy](INDEX_POLICY.md#cross-index-interoperability).
+
+## Evidence governance
+
+The [Software Commons Evidence Standard](standards/EVIDENCE_STANDARD.md) is binding for Software Commons research and qualified publication. Indexes must pin the adopted revision and apply its required review and validation gates. An index can add stricter domain obligations through its repository policy. The [adoption and revision policy](standards/SCES_ADOPTION.md) governs enforcement, nonconformance, and changes to the standard.

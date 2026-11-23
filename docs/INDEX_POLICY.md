@@ -19,6 +19,8 @@ Use `<singular-domain>-index` for a repository that publishes a knowledge index.
 
 Each index must document the licensing of its published material, any upstream terms relevant to its reuse, and which source content can be redistributed. The organization repository's license applies to that repository.
 
+Each index must [adopt SCES](standards/SCES_ADOPTION.md) before substantive research and apply the pinned qualification gates before publishing a canonical knowledge release.
+
 ## Cross-index interoperability
 
 A reference must identify the owning index and record unambiguously. Include the target release or another documented immutable revision when the reference is used in a published artifact. Document how a consumer can resolve the reference and interpret the referenced representation at that revision. Distinguish index release versions from the revisions of underlying sources, and identify source revisions through editions, versioned locators, immutable identifiers, or comparable evidence.

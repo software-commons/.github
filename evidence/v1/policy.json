@@ -1,0 +1,23 @@
+{
+  "policy": "SCES-1.0",
+  "revision_tag": "sces-v1.0",
+  "proposal_sha256": "274e79dc99fe8cf0f2ca5420fc42545fc4f24b2715a6f83d62905fe239d5bbd4",
+  "sha256": "14da3f31f697ab828d4a4560f060dbe511861020db54bea7bc531e20ea0855ce",
+  "files": {
+    ".gitattributes": "4f3bff76cb90da4c7eb9f25c2699c4e356e0a9457e2aa79e6f0a2742f0a9ca86",
+    ".github/workflows/sces-policy.yml": "6f61302219a6ce42dc3946e5bc893e94eead974a6ae70f465ef356637bb33299",
+    ".github/workflows/sces-validate.yml": "851cdc2e2abda96cf01adc96aefd7e708f1798459ebb0cae14cb65752c49c3b4",
+    "docs/decisions/EVIDENCE_ARCHITECTURE.md": "2087e9ff0b5bde241bbba6eefdfb5abc9a7681e0b597a380eb4ff25122f8965c",
+    "docs/protocols/CODEX_RESEARCH_PROTOCOL.md": "257e11de064cdc5fd19a0ccdf989fd461d5377fc0870f693d1c433ff380ad8d6",
+    "docs/standards/EVIDENCE_STANDARD.md": "0e3d95d3acea861e9e2126cb23ddf2e950afba6b6681cb263112400492cee62e",
+    "docs/standards/SCES_ADOPTION.md": "7e9a9320a694b960925a871217c4b3f0721606ae9fd86039e81a0aecff70557a",
+    "evidence/v1/contracts.schema.json": "574956395247de677332da8e2cec19453bd34cf0497b40c31280b202cfd8630c",
+    "templates/SCES_AGENTS.md": "675e1e204e785226ac8496db8cf139cc3fd79b7f049d5873ae96292878e03afd",
+    "templates/SCES_RESEARCH_TASK.md": "fc91a3ae2a26894a2f08575140cbb14c6df0a557b1a955857124589b3909e27c",
+    "templates/sces-adoption.json": "589840a5bad2c06ed4c81bfc5a073cbe029fa425a9858412049f6164b626236e",
+    "templates/sces-ci.yml": "5b283eda430472a4f4271b25b14830903ea96e4bdf68741367aa3f8832a92257",
+    "tests/sces/test_validation.py": "95e0b12abfc9e50e5b4c0040eb2a2581e9cd4766bfda5921fae78764d87d2ee1",
+    "tools/sces/requirements.txt": "116d67c0ffddfa016dba2b974c9b12a98e5a4ea9dbbc4e29e3fd43b9e41eab5b",
+    "tools/sces/validate.py": "d9cc54c045722a9449f9dcdecfa0c1a73f15e7cf14a27e8b79b56cce6157822f"
+  }
+}

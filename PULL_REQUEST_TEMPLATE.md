@@ -6,6 +6,8 @@
 
 <!-- Cite source revisions and precise locators. Explain material interpretations, conflicts, or remaining uncertainty. -->
 
+<!-- For SCES-governed changes, link the claim, source, and separate verification records. Identify any withdrawn or superseded records. -->
+
 ## Validation
 
 <!-- List checks performed and results. Include reproducible steps for empirical claims, where applicable. -->
