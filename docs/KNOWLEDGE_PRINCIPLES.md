@@ -1,5 +1,7 @@
 # Knowledge quality principles
 
+The [Software Commons Evidence Standard](standards/EVIDENCE_STANDARD.md) defines the mandatory procedures and gates for applying these principles to research and publication.
+
 ## Authority and provenance
 
 Evaluate authority for each claim within its domain, version, and context. Cite the governing text for normative requirements and the relevant primary material for observations. Record the publisher or project, document or artifact, revision or edition, and a locator precise enough to verify the claim. Where a source cannot be pinned, record the access date and that limitation.

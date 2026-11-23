@@ -1,0 +1,13 @@
+{
+  "policy": "SCES-1.0",
+  "policy_sha256": "<policy-bundle-sha256>",
+  "repository": "software-commons/example-index",
+  "mode": "index",
+  "predicates": {
+    "example-requirement": {
+      "scope_dimensions": ["edition"],
+      "categories": ["normative"],
+      "targeted_review": true
+    }
+  }
+}

@@ -1,0 +1,17 @@
+name: SCES
+
+on:
+  pull_request:
+  merge_group:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Evidence
+    uses: software-commons/.github/.github/workflows/sces-validate.yml@POLICY_GIT_COMMIT
+    with:
+      policy-ref: POLICY_GIT_COMMIT

@@ -2,6 +2,8 @@
 
 Software Commons welcomes source-backed corrections, source submissions, and proposals for independently coherent knowledge domains. Review the [knowledge principles][principles] and [index policy][index-policy] before proposing a substantive change.
 
+Follow the [Software Commons Evidence Standard][evidence-standard] for material factual claims. Provide exact source and claim records, actual research and independent verification artifacts, and qualification results when applicable. The [Codex Research Protocol][codex-protocol] governs agent research and review.
+
 ## Choose the issue location
 
 - **Knowledge correction.** Use the issue tracker for the affected index. Include the record identifier or path, affected release, proposed correction, and evidence. For shared policy, identify the relevant section in the [organization repository][org-repository].
@@ -26,3 +28,5 @@ Follow the [code of conduct][conduct] and any repository-specific contribution g
 [org-repository]: https://github.com/software-commons/.github
 [org-issues]: https://github.com/software-commons/.github/issues
 [conduct]: https://github.com/software-commons/.github/blob/main/CODE_OF_CONDUCT.md
+[evidence-standard]: https://github.com/software-commons/.github/blob/main/docs/standards/EVIDENCE_STANDARD.md
+[codex-protocol]: https://github.com/software-commons/.github/blob/main/docs/protocols/CODEX_RESEARCH_PROTOCOL.md

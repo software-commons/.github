@@ -10,6 +10,9 @@ Software Commons is an independent initiative that synthesizes, normalizes, and 
 - [Governance and authority](docs/GOVERNANCE.md)
 - [Index repository and interoperability policy](docs/INDEX_POLICY.md)
 - [Knowledge quality principles](docs/KNOWLEDGE_PRINCIPLES.md)
+- [Software Commons Evidence Standard (SCES-1.0)](docs/standards/EVIDENCE_STANDARD.md)
+- [Codex Research Protocol](docs/protocols/CODEX_RESEARCH_PROTOCOL.md) and [index adoption](docs/standards/SCES_ADOPTION.md)
+- [SCES-1.0 qualification record](docs/standards/SCES_1_0_QUALIFICATION.md)
 
 ## Participation
 

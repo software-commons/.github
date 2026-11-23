@@ -1,0 +1,9 @@
+/.gitattributes text eol=lf
+/docs/decisions/EVIDENCE_ARCHITECTURE.md text eol=lf
+/docs/protocols/CODEX_RESEARCH_PROTOCOL.md text eol=lf
+/docs/standards/** text eol=lf
+/evidence/v1/** text eol=lf
+/tools/sces/** text eol=lf
+/tests/sces/** text eol=lf
+/templates/** text eol=lf
+/.github/workflows/sces-*.yml text eol=lf
