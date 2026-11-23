@@ -1,5 +1,7 @@
 # Software Commons
 
+<img src="https://raw.githubusercontent.com/software-commons/.github/main/assets/branding/software-commons-emblem.png" alt="Official Software Commons emblem" width="144">
+
 Software Commons is an independent initiative dedicated to the systematic discovery, synthesis, normalization, and standardization of software engineering knowledge.
 
 Technical knowledge is distributed across standards, specifications, reference documentation, release histories, and implementation evidence. These sources serve different purposes and often describe the same concepts with different terms, assumptions, or version boundaries. Software Commons develops focused, versioned, machine-readable reference indexes that reconcile these descriptions while preserving source authority, provenance, and distinctions that matter.
